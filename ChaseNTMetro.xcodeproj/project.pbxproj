@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,84 @@
 		47416EC625ECC3F10031850C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47416EC425ECC3F10031850C /* LaunchScreen.storyboard */; };
 		47416ED125ECC3F10031850C /* ChaseNTMetroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416ED025ECC3F10031850C /* ChaseNTMetroTests.swift */; };
 		47416EDC25ECC3F10031850C /* ChaseNTMetroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416EDB25ECC3F10031850C /* ChaseNTMetroUITests.swift */; };
+		47416F2A25ECC94A0031850C /* Inspectable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2425ECC94A0031850C /* Inspectable+UIView.swift */; };
+		47416F2B25ECC94A0031850C /* Inspectable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2425ECC94A0031850C /* Inspectable+UIView.swift */; };
+		47416F2C25ECC94A0031850C /* Inspectable+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2425ECC94A0031850C /* Inspectable+UIView.swift */; };
+		47416F2D25ECC94A0031850C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2625ECC94A0031850C /* UIView.swift */; };
+		47416F2E25ECC94A0031850C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2625ECC94A0031850C /* UIView.swift */; };
+		47416F2F25ECC94A0031850C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2625ECC94A0031850C /* UIView.swift */; };
+		47416F3025ECC94A0031850C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2725ECC94A0031850C /* UIColor.swift */; };
+		47416F3125ECC94A0031850C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2725ECC94A0031850C /* UIColor.swift */; };
+		47416F3225ECC94A0031850C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2725ECC94A0031850C /* UIColor.swift */; };
+		47416F3325ECC94A0031850C /* YYxSubViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2925ECC94A0031850C /* YYxSubViewProtocol.swift */; };
+		47416F3425ECC94A0031850C /* YYxSubViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2925ECC94A0031850C /* YYxSubViewProtocol.swift */; };
+		47416F3525ECC94A0031850C /* YYxSubViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F2925ECC94A0031850C /* YYxSubViewProtocol.swift */; };
+		47416F3F25ECC99E0031850C /* SnapKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F3E25ECC99E0031850C /* SnapKit+Extension.swift */; };
+		47416F4025ECC99E0031850C /* SnapKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F3E25ECC99E0031850C /* SnapKit+Extension.swift */; };
+		47416F4125ECC99E0031850C /* SnapKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F3E25ECC99E0031850C /* SnapKit+Extension.swift */; };
+		47416F6225ECCC260031850C /* NTMetroStaticDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F5F25ECCC260031850C /* NTMetroStaticDatas.swift */; };
+		47416F6325ECCC260031850C /* NTMetroStaticDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F5F25ECCC260031850C /* NTMetroStaticDatas.swift */; };
+		47416F6425ECCC260031850C /* NTMetroStaticDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F5F25ECCC260031850C /* NTMetroStaticDatas.swift */; };
+		47416F6525ECCC260031850C /* SettingUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F6025ECCC260031850C /* SettingUserDefaultManager.swift */; };
+		47416F6625ECCC260031850C /* SettingUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F6025ECCC260031850C /* SettingUserDefaultManager.swift */; };
+		47416F6725ECCC260031850C /* SettingUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F6025ECCC260031850C /* SettingUserDefaultManager.swift */; };
+		47416F6825ECCC260031850C /* LivingDepartureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F6125ECCC260031850C /* LivingDepartureManager.swift */; };
+		47416F6925ECCC260031850C /* LivingDepartureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F6125ECCC260031850C /* LivingDepartureManager.swift */; };
+		47416F6A25ECCC260031850C /* LivingDepartureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F6125ECCC260031850C /* LivingDepartureManager.swift */; };
+		47416F7725ECCD200031850C /* EachStationIndicationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F7325ECCD200031850C /* EachStationIndicationView.xib */; };
+		47416F7825ECCD200031850C /* EachStationIndicationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F7325ECCD200031850C /* EachStationIndicationView.xib */; };
+		47416F7925ECCD200031850C /* EachStationIndicationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F7325ECCD200031850C /* EachStationIndicationView.xib */; };
+		47416F7A25ECCD200031850C /* EachStationIndicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7425ECCD200031850C /* EachStationIndicationTableViewCell.swift */; };
+		47416F7B25ECCD200031850C /* EachStationIndicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7425ECCD200031850C /* EachStationIndicationTableViewCell.swift */; };
+		47416F7C25ECCD200031850C /* EachStationIndicationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7425ECCD200031850C /* EachStationIndicationTableViewCell.swift */; };
+		47416F7D25ECCD200031850C /* EachStationIndicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7525ECCD200031850C /* EachStationIndicationView.swift */; };
+		47416F7E25ECCD200031850C /* EachStationIndicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7525ECCD200031850C /* EachStationIndicationView.swift */; };
+		47416F7F25ECCD200031850C /* EachStationIndicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7525ECCD200031850C /* EachStationIndicationView.swift */; };
+		47416F8025ECCD200031850C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7625ECCD200031850C /* SettingTableViewCell.swift */; };
+		47416F8125ECCD200031850C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7625ECCD200031850C /* SettingTableViewCell.swift */; };
+		47416F8225ECCD200031850C /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F7625ECCD200031850C /* SettingTableViewCell.swift */; };
+		47416F9125ECCD2F0031850C /* RedLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F8B25ECCD2F0031850C /* RedLineView.xib */; };
+		47416F9225ECCD2F0031850C /* RedLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F8B25ECCD2F0031850C /* RedLineView.xib */; };
+		47416F9325ECCD2F0031850C /* RedLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F8B25ECCD2F0031850C /* RedLineView.xib */; };
+		47416F9425ECCD2F0031850C /* RoutePonitLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8C25ECCD2F0031850C /* RoutePonitLineView.swift */; };
+		47416F9525ECCD2F0031850C /* RoutePonitLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8C25ECCD2F0031850C /* RoutePonitLineView.swift */; };
+		47416F9625ECCD2F0031850C /* RoutePonitLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8C25ECCD2F0031850C /* RoutePonitLineView.swift */; };
+		47416F9725ECCD2F0031850C /* NarrowedNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8D25ECCD2F0031850C /* NarrowedNavigationButton.swift */; };
+		47416F9825ECCD2F0031850C /* NarrowedNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8D25ECCD2F0031850C /* NarrowedNavigationButton.swift */; };
+		47416F9925ECCD2F0031850C /* NarrowedNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8D25ECCD2F0031850C /* NarrowedNavigationButton.swift */; };
+		47416F9A25ECCD2F0031850C /* ExpadedNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8E25ECCD2F0031850C /* ExpadedNavigationView.swift */; };
+		47416F9B25ECCD2F0031850C /* ExpadedNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8E25ECCD2F0031850C /* ExpadedNavigationView.swift */; };
+		47416F9C25ECCD2F0031850C /* ExpadedNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8E25ECCD2F0031850C /* ExpadedNavigationView.swift */; };
+		47416F9D25ECCD2F0031850C /* DestinationInfoBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8F25ECCD2F0031850C /* DestinationInfoBoardView.swift */; };
+		47416F9E25ECCD2F0031850C /* DestinationInfoBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8F25ECCD2F0031850C /* DestinationInfoBoardView.swift */; };
+		47416F9F25ECCD2F0031850C /* DestinationInfoBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416F8F25ECCD2F0031850C /* DestinationInfoBoardView.swift */; };
+		47416FA025ECCD2F0031850C /* ColorsLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F9025ECCD2F0031850C /* ColorsLineView.xib */; };
+		47416FA125ECCD2F0031850C /* ColorsLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F9025ECCD2F0031850C /* ColorsLineView.xib */; };
+		47416FA225ECCD2F0031850C /* ColorsLineView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47416F9025ECCD2F0031850C /* ColorsLineView.xib */; };
+		47416FCF25ECD7650031850C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC725ECD7650031850C /* SettingViewController.swift */; };
+		47416FD025ECD7650031850C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC725ECD7650031850C /* SettingViewController.swift */; };
+		47416FD125ECD7650031850C /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC725ECD7650031850C /* SettingViewController.swift */; };
+		47416FD225ECD7660031850C /* UserSelectionStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC825ECD7650031850C /* UserSelectionStationViewController.swift */; };
+		47416FD325ECD7660031850C /* UserSelectionStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC825ECD7650031850C /* UserSelectionStationViewController.swift */; };
+		47416FD425ECD7660031850C /* UserSelectionStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC825ECD7650031850C /* UserSelectionStationViewController.swift */; };
+		47416FD525ECD7660031850C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC925ECD7650031850C /* MainTabBarController.swift */; };
+		47416FD625ECD7660031850C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC925ECD7650031850C /* MainTabBarController.swift */; };
+		47416FD725ECD7660031850C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FC925ECD7650031850C /* MainTabBarController.swift */; };
+		47416FD825ECD7660031850C /* DeclarationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCA25ECD7650031850C /* DeclarationViewController.swift */; };
+		47416FD925ECD7660031850C /* DeclarationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCA25ECD7650031850C /* DeclarationViewController.swift */; };
+		47416FDA25ECD7660031850C /* DeclarationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCA25ECD7650031850C /* DeclarationViewController.swift */; };
+		47416FDB25ECD7660031850C /* NTMetroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCC25ECD7650031850C /* NTMetroViewModel.swift */; };
+		47416FDC25ECD7660031850C /* NTMetroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCC25ECD7650031850C /* NTMetroViewModel.swift */; };
+		47416FDD25ECD7660031850C /* NTMetroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCC25ECD7650031850C /* NTMetroViewModel.swift */; };
+		47416FDE25ECD7660031850C /* TableViewDelegate+NTMetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCD25ECD7650031850C /* TableViewDelegate+NTMetroViewController.swift */; };
+		47416FDF25ECD7660031850C /* TableViewDelegate+NTMetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCD25ECD7650031850C /* TableViewDelegate+NTMetroViewController.swift */; };
+		47416FE025ECD7660031850C /* TableViewDelegate+NTMetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCD25ECD7650031850C /* TableViewDelegate+NTMetroViewController.swift */; };
+		47416FE125ECD7660031850C /* NTMetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCE25ECD7650031850C /* NTMetroViewController.swift */; };
+		47416FE225ECD7660031850C /* NTMetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCE25ECD7650031850C /* NTMetroViewController.swift */; };
+		47416FE325ECD7660031850C /* NTMetroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416FCE25ECD7650031850C /* NTMetroViewController.swift */; };
+		C936DA0931BCC58694D7512C /* Pods_ChaseNTMetro_ChaseNTMetroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5E5AFAD7627B720E3F766E3 /* Pods_ChaseNTMetro_ChaseNTMetroUITests.framework */; };
+		DD0B5DCD5C068C58AE322F47 /* Pods_ChaseNTMetroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B59E6E7FEF7A70C48BC7026F /* Pods_ChaseNTMetroTests.framework */; };
+		FF972073BB1B1C181A421C22 /* Pods_ChaseNTMetro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8287DB0B362E15FBC44C4732 /* Pods_ChaseNTMetro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +114,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05D985B7DDA769105FDA4347 /* Pods-ChaseNTMetroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetroTests.debug.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetroTests/Pods-ChaseNTMetroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D5D6F9CD712B3A6A0D55F6F /* Pods-ChaseNTMetro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetro.release.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetro/Pods-ChaseNTMetro.release.xcconfig"; sourceTree = "<group>"; };
+		305B011F8250E0B33F64EF2D /* Pods-ChaseNTMetro-ChaseNTMetroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetro-ChaseNTMetroUITests.release.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetro-ChaseNTMetroUITests/Pods-ChaseNTMetro-ChaseNTMetroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		462EFEFCF405DB490E05A79A /* Pods-ChaseNTMetroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetroTests.release.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetroTests/Pods-ChaseNTMetroTests.release.xcconfig"; sourceTree = "<group>"; };
 		47416EB325ECC3EE0031850C /* ChaseNTMetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaseNTMetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47416EB625ECC3EE0031850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47416EB825ECC3EE0031850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +133,36 @@
 		47416ED725ECC3F10031850C /* ChaseNTMetroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChaseNTMetroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47416EDB25ECC3F10031850C /* ChaseNTMetroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaseNTMetroUITests.swift; sourceTree = "<group>"; };
 		47416EDD25ECC3F10031850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47416F2425ECC94A0031850C /* Inspectable+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Inspectable+UIView.swift"; sourceTree = "<group>"; };
+		47416F2625ECC94A0031850C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		47416F2725ECC94A0031850C /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		47416F2925ECC94A0031850C /* YYxSubViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYxSubViewProtocol.swift; sourceTree = "<group>"; };
+		47416F3E25ECC99E0031850C /* SnapKit+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SnapKit+Extension.swift"; sourceTree = "<group>"; };
+		47416F5F25ECCC260031850C /* NTMetroStaticDatas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTMetroStaticDatas.swift; sourceTree = "<group>"; };
+		47416F6025ECCC260031850C /* SettingUserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingUserDefaultManager.swift; sourceTree = "<group>"; };
+		47416F6125ECCC260031850C /* LivingDepartureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivingDepartureManager.swift; sourceTree = "<group>"; };
+		47416F7325ECCD200031850C /* EachStationIndicationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EachStationIndicationView.xib; sourceTree = "<group>"; };
+		47416F7425ECCD200031850C /* EachStationIndicationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EachStationIndicationTableViewCell.swift; sourceTree = "<group>"; };
+		47416F7525ECCD200031850C /* EachStationIndicationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EachStationIndicationView.swift; sourceTree = "<group>"; };
+		47416F7625ECCD200031850C /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		47416F8B25ECCD2F0031850C /* RedLineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RedLineView.xib; sourceTree = "<group>"; };
+		47416F8C25ECCD2F0031850C /* RoutePonitLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePonitLineView.swift; sourceTree = "<group>"; };
+		47416F8D25ECCD2F0031850C /* NarrowedNavigationButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NarrowedNavigationButton.swift; sourceTree = "<group>"; };
+		47416F8E25ECCD2F0031850C /* ExpadedNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpadedNavigationView.swift; sourceTree = "<group>"; };
+		47416F8F25ECCD2F0031850C /* DestinationInfoBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationInfoBoardView.swift; sourceTree = "<group>"; };
+		47416F9025ECCD2F0031850C /* ColorsLineView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorsLineView.xib; sourceTree = "<group>"; };
+		47416FC725ECD7650031850C /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		47416FC825ECD7650031850C /* UserSelectionStationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSelectionStationViewController.swift; sourceTree = "<group>"; };
+		47416FC925ECD7650031850C /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		47416FCA25ECD7650031850C /* DeclarationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeclarationViewController.swift; sourceTree = "<group>"; };
+		47416FCC25ECD7650031850C /* NTMetroViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTMetroViewModel.swift; sourceTree = "<group>"; };
+		47416FCD25ECD7650031850C /* TableViewDelegate+NTMetroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TableViewDelegate+NTMetroViewController.swift"; sourceTree = "<group>"; };
+		47416FCE25ECD7650031850C /* NTMetroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTMetroViewController.swift; sourceTree = "<group>"; };
+		8287DB0B362E15FBC44C4732 /* Pods_ChaseNTMetro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChaseNTMetro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FAB280C3612FE5533EB61FF /* Pods-ChaseNTMetro-ChaseNTMetroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetro-ChaseNTMetroUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetro-ChaseNTMetroUITests/Pods-ChaseNTMetro-ChaseNTMetroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B59E6E7FEF7A70C48BC7026F /* Pods_ChaseNTMetroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChaseNTMetroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E36F0A963C014DC69376F5E7 /* Pods-ChaseNTMetro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetro.debug.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetro/Pods-ChaseNTMetro.debug.xcconfig"; sourceTree = "<group>"; };
+		F5E5AFAD7627B720E3F766E3 /* Pods_ChaseNTMetro_ChaseNTMetroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChaseNTMetro_ChaseNTMetroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF972073BB1B1C181A421C22 /* Pods_ChaseNTMetro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0B5DCD5C068C58AE322F47 /* Pods_ChaseNTMetroTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +186,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C936DA0931BCC58694D7512C /* Pods_ChaseNTMetro_ChaseNTMetroUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		466F7B4D8D2D5219585303B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E36F0A963C014DC69376F5E7 /* Pods-ChaseNTMetro.debug.xcconfig */,
+				2D5D6F9CD712B3A6A0D55F6F /* Pods-ChaseNTMetro.release.xcconfig */,
+				9FAB280C3612FE5533EB61FF /* Pods-ChaseNTMetro-ChaseNTMetroUITests.debug.xcconfig */,
+				305B011F8250E0B33F64EF2D /* Pods-ChaseNTMetro-ChaseNTMetroUITests.release.xcconfig */,
+				05D985B7DDA769105FDA4347 /* Pods-ChaseNTMetroTests.debug.xcconfig */,
+				462EFEFCF405DB490E05A79A /* Pods-ChaseNTMetroTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		47416EAA25ECC3EE0031850C = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +213,8 @@
 				47416ECF25ECC3F10031850C /* ChaseNTMetroTests */,
 				47416EDA25ECC3F10031850C /* ChaseNTMetroUITests */,
 				47416EB425ECC3EE0031850C /* Products */,
+				466F7B4D8D2D5219585303B0 /* Pods */,
+				E6B66D4A7B8DDE775D414AB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +239,12 @@
 				47416EC425ECC3F10031850C /* LaunchScreen.storyboard */,
 				47416EC725ECC3F10031850C /* Info.plist */,
 				47416EBF25ECC3EE0031850C /* ChaseNTMetro.xcdatamodeld */,
+				47416F2225ECC8940031850C /* ----Extension---- */,
+				47416F2125ECC81B0031850C /* -----Project----- */,
+				47416F5E25ECCC260031850C /* TemporaryShortCut */,
+				47416FC625ECD7650031850C /* ViewControllers */,
+				47416F8925ECCD2F0031850C /* DestinationInfoBoardView */,
+				47416F7125ECCD200031850C /* TableViewCells */,
 			);
 			path = ChaseNTMetro;
 			sourceTree = "<group>";
@@ -131,6 +267,151 @@
 			path = ChaseNTMetroUITests;
 			sourceTree = "<group>";
 		};
+		47416F2125ECC81B0031850C /* -----Project----- */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "-----Project-----";
+			sourceTree = "<group>";
+		};
+		47416F2225ECC8940031850C /* ----Extension---- */ = {
+			isa = PBXGroup;
+			children = (
+				47416F3C25ECC99E0031850C /* 3th+Extension */,
+				47416F2325ECC94A0031850C /* IB+Extension */,
+				47416F2525ECC94A0031850C /* UIKit+Extension */,
+				47416F2825ECC94A0031850C /* YYxProtocol */,
+			);
+			name = "----Extension----";
+			sourceTree = "<group>";
+		};
+		47416F2325ECC94A0031850C /* IB+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47416F2425ECC94A0031850C /* Inspectable+UIView.swift */,
+			);
+			name = "IB+Extension";
+			path = "YYxUIKiteExtesion/IB+Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+		47416F2525ECC94A0031850C /* UIKit+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47416F2625ECC94A0031850C /* UIView.swift */,
+				47416F2725ECC94A0031850C /* UIColor.swift */,
+			);
+			name = "UIKit+Extension";
+			path = "YYxUIKiteExtesion/UIKit+Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+		47416F2825ECC94A0031850C /* YYxProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				47416F2925ECC94A0031850C /* YYxSubViewProtocol.swift */,
+			);
+			name = YYxProtocol;
+			path = YYxUIKiteExtesion/YYxProtocol;
+			sourceTree = SOURCE_ROOT;
+		};
+		47416F3C25ECC99E0031850C /* 3th+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				47416F3D25ECC99E0031850C /* SnapKit */,
+			);
+			name = "3th+Extension";
+			path = "YYxUIKiteExtesion/3th+Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+		47416F3D25ECC99E0031850C /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				47416F3E25ECC99E0031850C /* SnapKit+Extension.swift */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		47416F5E25ECCC260031850C /* TemporaryShortCut */ = {
+			isa = PBXGroup;
+			children = (
+				47416F5F25ECCC260031850C /* NTMetroStaticDatas.swift */,
+				47416F6025ECCC260031850C /* SettingUserDefaultManager.swift */,
+				47416F6125ECCC260031850C /* LivingDepartureManager.swift */,
+			);
+			path = TemporaryShortCut;
+			sourceTree = "<group>";
+		};
+		47416F7125ECCD200031850C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				47416F7225ECCD200031850C /* EachStationIndicationTableViewCell */,
+				47416F7625ECCD200031850C /* SettingTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		47416F7225ECCD200031850C /* EachStationIndicationTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				47416F7325ECCD200031850C /* EachStationIndicationView.xib */,
+				47416F7425ECCD200031850C /* EachStationIndicationTableViewCell.swift */,
+				47416F7525ECCD200031850C /* EachStationIndicationView.swift */,
+			);
+			path = EachStationIndicationTableViewCell;
+			sourceTree = "<group>";
+		};
+		47416F8925ECCD2F0031850C /* DestinationInfoBoardView */ = {
+			isa = PBXGroup;
+			children = (
+				47416F8A25ECCD2F0031850C /* SubViews */,
+				47416F8F25ECCD2F0031850C /* DestinationInfoBoardView.swift */,
+				47416F9025ECCD2F0031850C /* ColorsLineView.xib */,
+			);
+			path = DestinationInfoBoardView;
+			sourceTree = "<group>";
+		};
+		47416F8A25ECCD2F0031850C /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				47416F8B25ECCD2F0031850C /* RedLineView.xib */,
+				47416F8C25ECCD2F0031850C /* RoutePonitLineView.swift */,
+				47416F8D25ECCD2F0031850C /* NarrowedNavigationButton.swift */,
+				47416F8E25ECCD2F0031850C /* ExpadedNavigationView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		47416FC625ECD7650031850C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				47416FCB25ECD7650031850C /* NTMetroViewController */,
+				47416FC725ECD7650031850C /* SettingViewController.swift */,
+				47416FC825ECD7650031850C /* UserSelectionStationViewController.swift */,
+				47416FC925ECD7650031850C /* MainTabBarController.swift */,
+				47416FCA25ECD7650031850C /* DeclarationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		47416FCB25ECD7650031850C /* NTMetroViewController */ = {
+			isa = PBXGroup;
+			children = (
+				47416FCE25ECD7650031850C /* NTMetroViewController.swift */,
+				47416FCC25ECD7650031850C /* NTMetroViewModel.swift */,
+				47416FCD25ECD7650031850C /* TableViewDelegate+NTMetroViewController.swift */,
+			);
+			path = NTMetroViewController;
+			sourceTree = "<group>";
+		};
+		E6B66D4A7B8DDE775D414AB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8287DB0B362E15FBC44C4732 /* Pods_ChaseNTMetro.framework */,
+				F5E5AFAD7627B720E3F766E3 /* Pods_ChaseNTMetro_ChaseNTMetroUITests.framework */,
+				B59E6E7FEF7A70C48BC7026F /* Pods_ChaseNTMetroTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +419,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47416EE025ECC3F10031850C /* Build configuration list for PBXNativeTarget "ChaseNTMetro" */;
 			buildPhases = (
+				7A78F1CAB7EDECD6ED291D91 /* [CP] Check Pods Manifest.lock */,
 				47416EAF25ECC3EE0031850C /* Sources */,
 				47416EB025ECC3EE0031850C /* Frameworks */,
 				47416EB125ECC3EE0031850C /* Resources */,
+				00E20B774D4B11AFB35E45C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +438,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47416EE325ECC3F10031850C /* Build configuration list for PBXNativeTarget "ChaseNTMetroTests" */;
 			buildPhases = (
+				B63E301A827814482EAF02E4 /* [CP] Check Pods Manifest.lock */,
 				47416EC825ECC3F10031850C /* Sources */,
 				47416EC925ECC3F10031850C /* Frameworks */,
 				47416ECA25ECC3F10031850C /* Resources */,
@@ -173,9 +457,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 47416EE625ECC3F10031850C /* Build configuration list for PBXNativeTarget "ChaseNTMetroUITests" */;
 			buildPhases = (
+				DB7D0ED3AF57271D12DEAEE4 /* [CP] Check Pods Manifest.lock */,
 				47416ED325ECC3F10031850C /* Sources */,
 				47416ED425ECC3F10031850C /* Frameworks */,
 				47416ED525ECC3F10031850C /* Resources */,
+				255234F17F23CD1BC252FA16 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,8 +520,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47416FA025ECCD2F0031850C /* ColorsLineView.xib in Resources */,
 				47416EC625ECC3F10031850C /* LaunchScreen.storyboard in Resources */,
 				47416EC325ECC3F10031850C /* Assets.xcassets in Resources */,
+				47416F9125ECCD2F0031850C /* RedLineView.xib in Resources */,
+				47416F7725ECCD200031850C /* EachStationIndicationView.xib in Resources */,
 				47416EBE25ECC3EE0031850C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +533,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47416FA125ECCD2F0031850C /* ColorsLineView.xib in Resources */,
+				47416F9225ECCD2F0031850C /* RedLineView.xib in Resources */,
+				47416F7825ECCD200031850C /* EachStationIndicationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +543,116 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47416FA225ECCD2F0031850C /* ColorsLineView.xib in Resources */,
+				47416F9325ECCD2F0031850C /* RedLineView.xib in Resources */,
+				47416F7925ECCD200031850C /* EachStationIndicationView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E20B774D4B11AFB35E45C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaseNTMetro/Pods-ChaseNTMetro-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaseNTMetro/Pods-ChaseNTMetro-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChaseNTMetro/Pods-ChaseNTMetro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		255234F17F23CD1BC252FA16 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaseNTMetro-ChaseNTMetroUITests/Pods-ChaseNTMetro-ChaseNTMetroUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChaseNTMetro-ChaseNTMetroUITests/Pods-ChaseNTMetro-ChaseNTMetroUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChaseNTMetro-ChaseNTMetroUITests/Pods-ChaseNTMetro-ChaseNTMetroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A78F1CAB7EDECD6ED291D91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaseNTMetro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B63E301A827814482EAF02E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaseNTMetroTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7D0ED3AF57271D12DEAEE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChaseNTMetro-ChaseNTMetroUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		47416EAF25ECC3EE0031850C /* Sources */ = {
@@ -262,9 +660,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				47416EBB25ECC3EE0031850C /* ViewController.swift in Sources */,
+				47416F7D25ECCD200031850C /* EachStationIndicationView.swift in Sources */,
+				47416FD525ECD7660031850C /* MainTabBarController.swift in Sources */,
+				47416F9425ECCD2F0031850C /* RoutePonitLineView.swift in Sources */,
+				47416FD225ECD7660031850C /* UserSelectionStationViewController.swift in Sources */,
+				47416F3025ECC94A0031850C /* UIColor.swift in Sources */,
+				47416F3F25ECC99E0031850C /* SnapKit+Extension.swift in Sources */,
+				47416F6825ECCC260031850C /* LivingDepartureManager.swift in Sources */,
+				47416FE125ECD7660031850C /* NTMetroViewController.swift in Sources */,
 				47416EB725ECC3EE0031850C /* AppDelegate.swift in Sources */,
+				47416F2A25ECC94A0031850C /* Inspectable+UIView.swift in Sources */,
+				47416F3325ECC94A0031850C /* YYxSubViewProtocol.swift in Sources */,
 				47416EC125ECC3EE0031850C /* ChaseNTMetro.xcdatamodeld in Sources */,
+				47416F9A25ECCD2F0031850C /* ExpadedNavigationView.swift in Sources */,
+				47416F6525ECCC260031850C /* SettingUserDefaultManager.swift in Sources */,
+				47416F9D25ECCD2F0031850C /* DestinationInfoBoardView.swift in Sources */,
+				47416F8025ECCD200031850C /* SettingTableViewCell.swift in Sources */,
+				47416F7A25ECCD200031850C /* EachStationIndicationTableViewCell.swift in Sources */,
+				47416FDE25ECD7660031850C /* TableViewDelegate+NTMetroViewController.swift in Sources */,
+				47416FCF25ECD7650031850C /* SettingViewController.swift in Sources */,
+				47416F2D25ECC94A0031850C /* UIView.swift in Sources */,
+				47416F6225ECCC260031850C /* NTMetroStaticDatas.swift in Sources */,
+				47416FD825ECD7660031850C /* DeclarationViewController.swift in Sources */,
 				47416EB925ECC3EE0031850C /* SceneDelegate.swift in Sources */,
+				47416FDB25ECD7660031850C /* NTMetroViewModel.swift in Sources */,
+				47416F9725ECCD2F0031850C /* NarrowedNavigationButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +692,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47416F7E25ECCD200031850C /* EachStationIndicationView.swift in Sources */,
+				47416F9E25ECCD2F0031850C /* DestinationInfoBoardView.swift in Sources */,
+				47416F3425ECC94A0031850C /* YYxSubViewProtocol.swift in Sources */,
+				47416F6625ECCC260031850C /* SettingUserDefaultManager.swift in Sources */,
 				47416ED125ECC3F10031850C /* ChaseNTMetroTests.swift in Sources */,
+				47416FD025ECD7650031850C /* SettingViewController.swift in Sources */,
+				47416F6325ECCC260031850C /* NTMetroStaticDatas.swift in Sources */,
+				47416FD925ECD7660031850C /* DeclarationViewController.swift in Sources */,
+				47416F8125ECCD200031850C /* SettingTableViewCell.swift in Sources */,
+				47416F4025ECC99E0031850C /* SnapKit+Extension.swift in Sources */,
+				47416F3125ECC94A0031850C /* UIColor.swift in Sources */,
+				47416F2E25ECC94A0031850C /* UIView.swift in Sources */,
+				47416F2B25ECC94A0031850C /* Inspectable+UIView.swift in Sources */,
+				47416FDC25ECD7660031850C /* NTMetroViewModel.swift in Sources */,
+				47416F9B25ECCD2F0031850C /* ExpadedNavigationView.swift in Sources */,
+				47416FD625ECD7660031850C /* MainTabBarController.swift in Sources */,
+				47416F9825ECCD2F0031850C /* NarrowedNavigationButton.swift in Sources */,
+				47416F7B25ECCD200031850C /* EachStationIndicationTableViewCell.swift in Sources */,
+				47416FD325ECD7660031850C /* UserSelectionStationViewController.swift in Sources */,
+				47416F6925ECCC260031850C /* LivingDepartureManager.swift in Sources */,
+				47416F9525ECCD2F0031850C /* RoutePonitLineView.swift in Sources */,
+				47416FDF25ECD7660031850C /* TableViewDelegate+NTMetroViewController.swift in Sources */,
+				47416FE225ECD7660031850C /* NTMetroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +722,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47416F7F25ECCD200031850C /* EachStationIndicationView.swift in Sources */,
+				47416F9F25ECCD2F0031850C /* DestinationInfoBoardView.swift in Sources */,
+				47416F3525ECC94A0031850C /* YYxSubViewProtocol.swift in Sources */,
+				47416F6725ECCC260031850C /* SettingUserDefaultManager.swift in Sources */,
 				47416EDC25ECC3F10031850C /* ChaseNTMetroUITests.swift in Sources */,
+				47416FD125ECD7650031850C /* SettingViewController.swift in Sources */,
+				47416F6425ECCC260031850C /* NTMetroStaticDatas.swift in Sources */,
+				47416FDA25ECD7660031850C /* DeclarationViewController.swift in Sources */,
+				47416F8225ECCD200031850C /* SettingTableViewCell.swift in Sources */,
+				47416F4125ECC99E0031850C /* SnapKit+Extension.swift in Sources */,
+				47416F3225ECC94A0031850C /* UIColor.swift in Sources */,
+				47416F2F25ECC94A0031850C /* UIView.swift in Sources */,
+				47416F2C25ECC94A0031850C /* Inspectable+UIView.swift in Sources */,
+				47416FDD25ECD7660031850C /* NTMetroViewModel.swift in Sources */,
+				47416F9C25ECCD2F0031850C /* ExpadedNavigationView.swift in Sources */,
+				47416FD725ECD7660031850C /* MainTabBarController.swift in Sources */,
+				47416F9925ECCD2F0031850C /* NarrowedNavigationButton.swift in Sources */,
+				47416F7C25ECCD200031850C /* EachStationIndicationTableViewCell.swift in Sources */,
+				47416FD425ECD7660031850C /* UserSelectionStationViewController.swift in Sources */,
+				47416F6A25ECCC260031850C /* LivingDepartureManager.swift in Sources */,
+				47416F9625ECCD2F0031850C /* RoutePonitLineView.swift in Sources */,
+				47416FE025ECD7660031850C /* TableViewDelegate+NTMetroViewController.swift in Sources */,
+				47416FE325ECD7660031850C /* NTMetroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,17 +901,20 @@
 		};
 		47416EE125ECC3F10031850C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36F0A963C014DC69376F5E7 /* Pods-ChaseNTMetro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = XPYYPG44HB;
 				INFOPLIST_FILE = ChaseNTMetro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yyx.com.ChaseNTMetro;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YYxChaseNTMetro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,17 +923,20 @@
 		};
 		47416EE225ECC3F10031850C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D5D6F9CD712B3A6A0D55F6F /* Pods-ChaseNTMetro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = XPYYPG44HB;
 				INFOPLIST_FILE = ChaseNTMetro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = yyx.com.ChaseNTMetro;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.YYxChaseNTMetro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -475,6 +945,7 @@
 		};
 		47416EE425ECC3F10031850C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05D985B7DDA769105FDA4347 /* Pods-ChaseNTMetroTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +968,7 @@
 		};
 		47416EE525ECC3F10031850C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 462EFEFCF405DB490E05A79A /* Pods-ChaseNTMetroTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +991,7 @@
 		};
 		47416EE725ECC3F10031850C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FAB280C3612FE5533EB61FF /* Pods-ChaseNTMetro-ChaseNTMetroUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +1012,7 @@
 		};
 		47416EE825ECC3F10031850C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305B011F8250E0B33F64EF2D /* Pods-ChaseNTMetro-ChaseNTMetroUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
