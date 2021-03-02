@@ -8,6 +8,7 @@
 import Foundation
 import Kanna
 import RxSwift
+import Alamofire
 extension LivingDepartureManager{
     
     class Parse {
@@ -198,36 +199,34 @@ class LivingDepartureManager {
     }
     func requset() {
         let path = "https://trainsmonitor.ntmetro.com.tw/"
-        guard let url = URL(string: path) else {
-            return
-        }
         var result: Result<String?, NetworkError>!
-        
-        let semaphore = DispatchSemaphore(value: 0)
-        URLSession.shared.dataTask(with: url) {(data, _, _) in
-            if let data = data {
+
+        AF.request(path).response { response in
+            
+            
+            if let data = response.data {
                 result = .success(String(data: data, encoding: .utf8))
             } else {
                 result = .failure(.server)
             }
-            semaphore.signal()
-        }.resume()
-        if semaphore.wait(timeout: .now() + 15) == .timedOut {
-            result = .failure(.timeout)
+            switch result {
+            
+            case .success(let content):
+                
+                guard  let content = content else {print("LivingDepartureManager request success, but empty content");return}
+                self.parse.update(content: content)
+                
+            case .failure( let wrongMsg):
+                print("wrongMsg:::\(wrongMsg)")
+                
+            case .none:
+                break
+            }
+//            debugPrint(response)
+            
         }
-        switch result {
         
-        case .success(let content):
-            
-            guard  let content = content else {print("LivingDepartureManager request success, but empty content");return}
-            self.parse.update(content: content)
-            
-        case .failure( let wrongMsg):
-            print("wrongMsg:::\(wrongMsg)")
-            
-        case .none:
-            break
-        }
+    
         
     }
     
