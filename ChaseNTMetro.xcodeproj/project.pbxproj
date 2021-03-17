@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		471B799A25FFA15E0082743D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 471B799925FFA15E0082743D /* GoogleService-Info.plist */; };
 		47416EB725ECC3EE0031850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416EB625ECC3EE0031850C /* AppDelegate.swift */; };
 		47416EB925ECC3EE0031850C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416EB825ECC3EE0031850C /* SceneDelegate.swift */; };
 		47416EBB25ECC3EE0031850C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47416EBA25ECC3EE0031850C /* ViewController.swift */; };
@@ -118,6 +119,7 @@
 		2D5D6F9CD712B3A6A0D55F6F /* Pods-ChaseNTMetro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetro.release.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetro/Pods-ChaseNTMetro.release.xcconfig"; sourceTree = "<group>"; };
 		305B011F8250E0B33F64EF2D /* Pods-ChaseNTMetro-ChaseNTMetroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetro-ChaseNTMetroUITests.release.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetro-ChaseNTMetroUITests/Pods-ChaseNTMetro-ChaseNTMetroUITests.release.xcconfig"; sourceTree = "<group>"; };
 		462EFEFCF405DB490E05A79A /* Pods-ChaseNTMetroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChaseNTMetroTests.release.xcconfig"; path = "Target Support Files/Pods-ChaseNTMetroTests/Pods-ChaseNTMetroTests.release.xcconfig"; sourceTree = "<group>"; };
+		471B799925FFA15E0082743D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		47416EB325ECC3EE0031850C /* ChaseNTMetro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChaseNTMetro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47416EB625ECC3EE0031850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47416EB825ECC3EE0031850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 		47416EAA25ECC3EE0031850C = {
 			isa = PBXGroup;
 			children = (
+				471B799925FFA15E0082743D /* GoogleService-Info.plist */,
 				47416EB525ECC3EE0031850C /* ChaseNTMetro */,
 				47416ECF25ECC3F10031850C /* ChaseNTMetroTests */,
 				47416EDA25ECC3F10031850C /* ChaseNTMetroUITests */,
@@ -526,6 +529,7 @@
 				47416F9125ECCD2F0031850C /* RedLineView.xib in Resources */,
 				47416F7725ECCD200031850C /* EachStationIndicationView.xib in Resources */,
 				47416EBE25ECC3EE0031850C /* Main.storyboard in Resources */,
+				471B799A25FFA15E0082743D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,14 +911,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = XPYYPG44HB;
 				INFOPLIST_FILE = ChaseNTMetro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.YYxChaseNTMetro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NTMetroDev;
@@ -931,14 +935,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = XPYYPG44HB;
 				INFOPLIST_FILE = ChaseNTMetro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.YYxChaseNTMetro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NTMetroDis;

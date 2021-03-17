@@ -15,7 +15,7 @@ extension LivingDepartureManager{
         private(set) var allForwardToHongshulinTimes = [String:String]()
         private(set) var allLeavingHongshulinTimes = [String:String]()
 
-        var subjects = (forward:PublishSubject<[String:String]>(),leaving:PublishSubject<[String:String]>())
+        var subjects = (forward:PublishSubject<[String:String]>(),leaving:PublishSubject<[String:String]>(),networkState:PublishSubject<Bool>())
         private var htmlContent = String()
         func update(content html:String)  {
             htmlContent = html
@@ -215,10 +215,11 @@ class LivingDepartureManager {
                 
                 guard  let content = content else {print("LivingDepartureManager request success, but empty content");return}
                 self.parse.update(content: content)
-                
+                self.parse.subjects.networkState.onNext(true)
+
             case .failure( let wrongMsg):
-                print("wrongMsg:::\(wrongMsg)")
-                
+                print(wrongMsg.localizedDescription)
+                self.parse.subjects.networkState.onNext(false)
             case .none:
                 break
             }

@@ -16,23 +16,23 @@ class NTMetroViewController: UIViewController {
     
     let viewModel:NTMetroViewModel
     let disposeBag = DisposeBag()
-
+    
     // MARK: - Views
-//    lazy var bannerView: GADBannerView = {
-//        let   bannerView = GADBannerView(adSize: kGADAdSizeBanner)
-//        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
-//         bannerView.rootViewController = self
-//        return  bannerView
-//        
-//    }()
+    //    lazy var bannerView: GADBannerView = {
+    //        let   bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+    //        bannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+    //         bannerView.rootViewController = self
+    //        return  bannerView
+    //
+    //    }()
     lazy var tableView:UITableView = {
         let table = UITableView(frame: .zero, style: .plain)
-//        let adview = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 80))
-//        adview.addSubview(self.bannerView)
-//        bannerView.snp.makeConstraints({make in make.sameAsSuperView() })
-//        bannerView.load(GADRequest())
-//        table.tableHeaderView = adview
-
+        //        let adview = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 80))
+        //        adview.addSubview(self.bannerView)
+        //        bannerView.snp.makeConstraints({make in make.sameAsSuperView() })
+        //        bannerView.load(GADRequest())
+        //        table.tableHeaderView = adview
+        
         table.separatorStyle = .none
         table.showsVerticalScrollIndicator = false
         table.showsHorizontalScrollIndicator = false
@@ -42,7 +42,14 @@ class NTMetroViewController: UIViewController {
         table.backgroundColor = NTMetroStaticDatas.colors.mainBackgroundColor
         return table
     }()
-    
+    lazy var errorLabel:UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.font = UIFont.systemFont(ofSize: 25)
+        label.text = "喔喔！！ 網路出現問題！！"
+        label.isHidden = true
+        return label
+    }()
     let destinationInfoBoardView = DestinationInfoBoardView(frame: .zero)
     init(livingDepartureManager:LivingDepartureManager) {
         self.viewModel = NTMetroViewModel(livingDepartureManager: livingDepartureManager)
@@ -55,7 +62,7 @@ class NTMetroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-   
+        
         
         stettingThisView()
         addThisSubViews()
@@ -93,16 +100,23 @@ class NTMetroViewController: UIViewController {
                 
             }
         }).disposed(by: disposeBag)
+        viewModel.livingDepartureManager.parse.subjects.networkState.subscribe({[unowned self] subject in
+            guard let hasNetwork = subject.element   else {return}
+            DispatchQueue.main.async {
+                self.tableView.isHidden = !hasNetwork
+                self.errorLabel.isHidden = hasNetwork
+            }
+        }).disposed(by: disposeBag)
     }
     private func stettingThisView(){
         if self.traitCollection.userInterfaceStyle == .dark {
-                    // User Interface is Dark
-                view.backgroundColor = .black
-                } else {
-                    // User Interface is Light
-                    view.backgroundColor = .white
-
-                }
+            // User Interface is Dark
+            view.backgroundColor = NTMetroStaticDatas.colors.darkModeOringnalUIBackground
+        } else {
+            // User Interface is Light
+            view.backgroundColor = NTMetroStaticDatas.colors.mainBackgroundColor
+            
+        }
         destinationInfoBoardView.expadedNavigationView.stateChanging.subscribe({[unowned self] subject in
             guard  let states = subject.element else {return}
             switch(states.isRedLineEnd,states.witchColorLineToFront){
@@ -110,7 +124,7 @@ class NTMetroViewController: UIViewController {
                 viewModel.setStartStation(stationColorType: .blue)
                 viewModel.setEndStation(stationColorType: .red)
                 self.viewModel.setStartStation(stationColorType: .blue)
-//                self.tableView.reloadData()
+            //                self.tableView.reloadData()
             case (false,.blueLine):
                 viewModel.setEndStation(stationColorType: .blue)
                 viewModel.setStartStation(stationColorType: .red)
@@ -119,24 +133,31 @@ class NTMetroViewController: UIViewController {
                 viewModel.setStartStation(stationColorType: .green)
                 viewModel.setEndStation(stationColorType: .red)
                 self.viewModel.setStartStation(stationColorType: .green)
-//                self.tableView.reloadData()
-                
+            //                self.tableView.reloadData()
+            
             case (false,.greenLine):
                 viewModel.setEndStation(stationColorType: .green)
                 viewModel.setStartStation(stationColorType: .red)
             }
             self.viewModel.requestLivingDepartureManagerData()
-
+            
             
         }).disposed(by: disposeBag)
         
     }
     private func addThisSubViews(){
+        view.addSubview(errorLabel)
         view.addSubview(tableView)
         view.addSubview(destinationInfoBoardView)
     }
     private func layoutThisView(){
         guard  let tabBar = tabBarController?.tabBar else {return}
+        errorLabel.snp.makeConstraints({make in
+            make.centerX.centerY.leading.trailing.equalToSuperview()
+            make.height.equalTo(45)
+            
+            
+        })
         tableView.snp.makeConstraints({make in
             make.leadingXtrailingEqualToSuperview(offset: 0)
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
